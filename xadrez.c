@@ -55,6 +55,29 @@ int main() {
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
+    // Utilizando o for e o while para a movimentação do cavalo
+
+        printf("\nMovimento do Cavalo:\n");
+
+    int movimentoVertical = 2;   // duas casas para baixo
+    int movimentoHorizontal = 1; // uma casa para a esquerda
+
+    for (i = 1; i <= 1; i++) { // loop externo
+
+        int contador = 0;
+
+        // loop interno: duas casas para baixo
+        while (contador < movimentoVertical) {
+            printf("Baixo\n");
+            contador++;
+        }
+
+        // uma casa para a esquerda
+        for (contador = 0; contador < movimentoHorizontal; contador++) {
+            printf("Esquerda\n");
+        }
+    }
+
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
